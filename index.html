@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+<head >
+  <link rel="stylesheet" href="C:\Users\gladi\Desktop\Projects\How do u do\css\do.css">
+</head>
+<body style="background-color:#181818;">
+<div>
+  <h1 id="title" align="center">Mental Health Update</h1>
+<b>  <p id="description" align="center">A quick mental health update</p></b>
+  <form id="survey-form" method="POST" action="registration_form.php">
+
+    <label for="name" id="name-label">Your name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+    <label for="email" id="email-label"> Your Email id:</label>
+    <input type="email" id="email" pattern=".+@gmail.com" size="30" placeholder="Enter your email"><br><br>
+    <label for="age" id="number-label">Your age:</label>
+    <input type="number" id="age" name="age" min="1" max="100" placeholder="Select"><br><br>
+
+    <label for="mood">Your mood today:</label>
+    <select name="mood" id="dropdown">
+    <option value="sad">Sad</option>
+    <option value="numb">Numb</option>
+    <option value="contempt">Contempt</option>
+    <option value="happy">Happy</option>
+    </select>
+
+    <p>What would you like to do?</p>
+  <input type="checkbox" id="feeling1" name="feeling1" value="Option 1">
+  <label for="feeling1"> Call a friend</label><br>
+  <input type="checkbox" id="feeling2" name="feeling2" value="Option 2">
+  <label for="feeling2"> Take a break</label><br>
+  <input type="checkbox" id="feeling3" name="feeling3" value="Option 3">
+  <label for="feeling3"> Watch F.R.I.E.N.D.S.</label><br>
+
+  <p> Wanna say something?</p>
+  <textarea name="comment" form="usrform">Enter text here...</textarea><br><br>
+  <button type="submit" value="Send" id="button">Submit</button>
+  </form>
+  </div>
+
+  </body>
+
+
+</html>
